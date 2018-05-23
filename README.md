@@ -9,6 +9,7 @@
 * MQTT Client installed for example MQTTBOX / MQTT.FX
 * RevealMD installed for the presentation (in slides execute ./present.sh)
     * `npm install -g reveal-md`
+* For the certificates in the AWS IOT demo, create a thing and download the certificates and place in step4
 
 ### Build the required Docker images
 
