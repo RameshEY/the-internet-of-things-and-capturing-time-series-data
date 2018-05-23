@@ -11,6 +11,9 @@
     * `npm install -g reveal-md`
 * For the certificates in the AWS IOT demo, create a thing and download the certificates and place in step4
 
+### Notes
+* Generate PDF from presentation use `http://localhost:1948/slides.md?print-pdf`
+
 ### Build the required Docker images
 
 * Execute `./build-docker-images`
