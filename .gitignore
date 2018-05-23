@@ -8,5 +8,4 @@ docker-images/mqtt-demo/bin
 **.crt
 **.db
 **.pem.key
-**.gradle
 **.idea
