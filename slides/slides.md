@@ -807,7 +807,7 @@ Pretty pictures
 
 ## Demo
 
-##  Grafana - InfluxDB 
+## Grafana - InfluxDB 
 
 ---
 
