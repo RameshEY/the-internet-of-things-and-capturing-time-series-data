@@ -1,0 +1,61 @@
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
+
+.reveal .footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: #3197d4;
+    font-size: 0.5em;
+    color: white;
+  }
+
+.reveal strong {
+    color: rgb(235, 54, 135);
+  }
+
+/* .highlight {
+    color: rgb(235, 54, 135);
+} */
+.reveal section img { 
+    background:none; 
+    border:none; 
+    box-shadow:none; 
+    
+}
+
+.reveal pre code {
+    max-height: 100%;
+    font-size: 70%;
+}
+
+body:after {
+    content: url(../images/logo.png);
+    position: fixed;
+    bottom: 3.5em;
+    left: 3.5em;
+}
+
+html.dimbg .slide-background.present {
+    opacity: 0.2;
+}
+
+
+.multiCol {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    /* text-align: left; */
+}
+
+.col {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    padding: 2% 0 2% 3%;
+    
+}
+.col :first-of-type {
+    vertical-align: top;
+    padding-left: 0;
+}

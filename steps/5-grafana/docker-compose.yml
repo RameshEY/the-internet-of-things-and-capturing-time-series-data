@@ -1,0 +1,52 @@
+version: "3"
+services:
+
+  mosquitto:
+    image: eclipse-mosquitto:1.4.12
+    container_name: mosquitto
+    ports:
+      - 1883:1883       # MQTT port
+      - 9001:9001       # MQTT websocket port
+    volumes:
+      - $PWD/../../mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf      
+      - $PWD/../../mosquitto/data:/mosquitto/data
+
+  influxdb:
+    image: influxdb:1.5.2
+    container_name: influxdb
+    environment:
+      - INFLUXDB_REPORTING_DISABLED=true
+      - INFLUXDB_HTTP_AUTH_ENABLED=true
+      - INFLUXDB_ADMIN_USER=root
+      - INFLUXDB_ADMIN_PASSWORD=root
+      - INFLUXDB_DB=iotdata
+    ports:
+      - 8086:8086
+    volumes:
+      - $PWD/../../influxdb/data:/var/lib/influxdb
+
+  grails:
+    image: grails-mqtt-demo:latest
+    container_name: grails-mqtt-demo
+    ports:
+      - 8080:8080       # WEB UI port
+    environment:
+      - MQTT_HOST=tcp://mosquitto:1883
+      - MQTT_TOPIC=livingroom/temperature
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_USERNAME=root
+      - INFLUXDB_PASSWORD=root
+      - INFLUXDB_DATABASE=iotdata
+      - INFLUXDB_ENABLE=true
+
+  grafana:
+    image: grafana/grafana:5.1.0
+    container_name: grafana
+    ports:
+      - "3000:3000"
+
+  chronegraf:
+    image: chronograf:1.4.4.2
+    container_name: chronograf
+    ports:
+      - "8888:8888"

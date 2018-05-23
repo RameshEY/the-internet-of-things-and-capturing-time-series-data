@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  mosquitto:
+    image: eclipse-mosquitto:1.4.12
+    container_name: mosquitto
+    ports:
+      - 1883:1883       # MQTT port
+      - 9001:9001       # MQTT websocket port
+    volumes:
+      - $PWD/../../mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf      
+      - $PWD/../../mosquitto/data:/mosquitto/data
