@@ -812,3 +812,7 @@ Pretty pictures
 ---
 
 # Thank **you**
+
+<i class="fab fa-github fa-4x"></i>
+
+https://github.com/mpas/the-internet-of-things-and-capturing-time-series-data
