@@ -605,7 +605,7 @@ Usability: TSDBs also typically include functions and operations common to time-
 
 ## InfluxData Products
 
-![](./images/influxdata-products.png) <!--  .element  height="70%" width="70%" -->
+![](./images/influxdata-products.png) <!--  .element  height="60%" width="60%" -->
 
 ----
 
@@ -801,7 +801,7 @@ Pretty pictures
 
 ## Grafana Dashboard
 
-![](./images/grafana-screenshot.png)
+![](./images/grafana-screenshot.png) <!--  .element  height="80%"  width="80%" -->
 
 ----
 
