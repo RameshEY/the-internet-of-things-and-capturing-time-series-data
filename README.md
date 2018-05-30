@@ -66,8 +66,21 @@ This will build the following images:
     * SELECT (*) FROM temperature GROUP BY time(5s)
     * SELECT (*) FROM temperature GROUP BY time(5s),*
     * SELECT (*) INTO test FROM temperature GROUP BY time(5s),*
+* [Chronograf][chronograf] -> create connection
+    * url: http://influxdb:8086
 
 ## Step 5: Grafana - InfluxDB
 
 * Start Mosquitto/Grails/InfluxDB/Grafana using docker-compose > dc up
-* Connect to InfluxDB and build a Graphs
+* [Grafana][grafana] -> Connect to InfluxDB and build a Graphs
+
+
+
+# Demo Links
+
+* [Chronograf][chronograf]
+* [Grafana][grafana]
+
+[chronograf]: http://localhost:8888
+[grafana]: http://localhost:3000
+
