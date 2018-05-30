@@ -38,3 +38,9 @@ services:
       - INFLUXDB_PASSWORD=root
       - INFLUXDB_DATABASE=iotdata
       - INFLUXDB_ENABLE=true
+
+  chronegraf:
+    image: chronograf:1.4.4.2
+    container_name: chronograf
+    ports:
+      - "8888:8888"
