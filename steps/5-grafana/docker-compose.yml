@@ -32,7 +32,7 @@ services:
       - 8080:8080       # WEB UI port
     environment:
       - MQTT_HOST=tcp://mosquitto:1883
-      - MQTT_TOPIC=livingroom/temperature
+      - MQTT_TOPIC=myhome/livingroom/temperature
       - INFLUXDB_URL=http://influxdb:8086
       - INFLUXDB_USERNAME=root
       - INFLUXDB_PASSWORD=root
