@@ -10,8 +10,7 @@ revealOptions:
 
 # **Time Series Data**
 
-<small>Marco Pas / Philips Research</small>
-
+<small>Marco Pas / @marcopas</small>
 ---
 
 ## Goal
